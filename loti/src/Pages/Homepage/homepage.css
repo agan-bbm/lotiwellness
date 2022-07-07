@@ -1,0 +1,29 @@
+.firstsection{
+    display: flex;
+}
+.mainsection{
+    background: url("../../components/Assets/mainbanner.png");
+    background-size: cover;
+}
+.rightsection{
+    background: url("../../components//Assets/rightbanner.png");
+    background-size: cover;
+}
+.subscribe-btn{
+    background-color: #006BA6;
+    color: white;
+}
+.sec-steps{
+    display: flex;
+
+}
+.sec-single-step{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subscribe{
+    background: url("../../components/Assets/subscribeimgbanner.png");
+    background-size: cover;
+}
