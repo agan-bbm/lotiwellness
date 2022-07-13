@@ -14,17 +14,23 @@ export function Steptwo({ nextStep, prevStep, handleFormData, values }) {
         <input
           type="checkbox"
           placeholder=" I love self-care. I can't get enough!"
+          value="love"
+          onChange={handleFormData("goals")}
         />
         <input
           type="checkbox"
           placeholder="I want to discover
 new self-care products."
+          value="discover"
+          onChange={handleFormData("goals")}
         />
 
         <input
           type="checkbox"
           placeholder=" I need help with
 self-care and wellness"
+          value="wellness"
+          onChange={handleFormData("goals")}
         />
 
         <input
@@ -39,7 +45,7 @@ and increase happiness"
           type="checkbox"
           placeholder=" I know someone who will
 love this subscription!"
-          value="love"
+          value="gift"
           onChange={handleFormData("goals")}
         />
       </div>
