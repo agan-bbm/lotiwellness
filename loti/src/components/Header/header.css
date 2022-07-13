@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+}
+.nav-logo img{
+    width: 80px;
+    height: 60px;
+  
+}
+.nav-lists{
+    width: auto;
+}
+.nav-lists ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-lists ul li{
+  list-style: none;
+  font-weight: 400;
+    color: black;
+    font-size: 16px;
+    padding: 0px 20px;
+
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.pastboxes-boxes{
+    display: grid;  
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+} 
+ .single-box img {
+    width: 100%;
+ }
+.single-box{
+    background-color: red;
+} 
+.single-box.upper{
+    background-color: yellow;
+}
+.single-box.under{
+    background-color: blue;
+}

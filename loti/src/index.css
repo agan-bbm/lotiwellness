@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "LexendDeca";
+  src: local("LexendDeca"),
+  url("./components/Fonts/Lexend_Deca/LexendDeca-Regular.ttf") format("truetype");
+  font-weight:400;
+}
+@font-face {
+  font-family: "LexendDeca";
+  src: local("LexendDeca"),
+  url("./components/Fonts/Lexend_Deca/LexendDeca-Bold.ttf") format("truetype");
+  font-weight:900;
+}
+@font-face {
+  font-family: "LexendDeca";
+  src: local("LexendDeca"),
+  url("./components/Fonts/Lexend_Deca/LexendDeca-Light.ttf") format("truetype");
+  font-weight:300;
 }
 
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: local("LibreBaskerville"),
+  url("./components/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight:400;
+}
+@font-face {
+  font-family: "LibreBaskerville";
+  src: local("LibreBaskerville"),
+  url("./components/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight:400;
+}
+@font-face {
+  font-family: "LibreBaskerville";
+  src: local("LibreBaskerville"),
+  url("./components/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight:400;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: "LexendDeca";;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "LibreBaskerville";
+}
+h1{
+  font-size: 61px;
+  line-height: 58.8px;
+}
+h2{
+  font-size:49px ;
+  line-height: 58.8px;
+
+}
+h3{
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 46.8px;
+
+}
+h4{
+  line-height:  37.2px;
+  font-size:31px;
+}
+h5{
+  line-height: 30px;
+  font-size: 25px;
+}
+h6{
+  line-height: 24px;
+  font-size:20px;
+}
+p{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+li{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:active{
+  color: red ;
+}
+@media(max-width:600px){
+  .container{
+    width: 100%;
+  }
 }

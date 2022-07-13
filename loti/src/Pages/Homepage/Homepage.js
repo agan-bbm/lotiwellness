@@ -13,21 +13,35 @@ import prod2 from "../../components/Assets/prod2.png";
 
 import prod3 from "../../components/Assets/prod3.png";
 import getlti from "../../components/Assets/getloti.png";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import testimonialone from "../../components/Assets/testimonialone.png";
+import ratingstars from "../../components/Assets/starsrating.png";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
 export function Homepage() {
   return (
     <>
       <div className="firstsection">
         <div className="mainsection">
-          <h1>
-            Unbox happiness,<br></br>
-            every month.
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam,
-          </p>
-          <button className="subscribe-btn">Subscribe now</button>
+          <div className="main-txt-btn">
+            <h2>
+              Unbox happiness,<br></br>
+              every month.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+            <button className="subscribe-btn secondary">Subscribe now</button>
+          </div>
         </div>
         <div className="rightsection">
           <img src={rightone} alt="" />
@@ -35,7 +49,7 @@ export function Homepage() {
         </div>
       </div>
 
-      <div className="secondsection">
+      <div className="secondsection container sec-pad">
         <div className="featuredon">
           <h5>Featured On</h5>
           <img src={featuredon} alt="" />
@@ -54,7 +68,7 @@ export function Homepage() {
           <div className="sec-steps">
             <div className="sec-single-step">
               <img src={step1} alt="step1" />
-              <h4>Subscribe to Loti</h4>
+              <h5>Subscribe to Loti</h5>
               <p>
                 Start your wellness journey & get a a new self-care kit
                 delivered to your home every month! Starting from CAD $47.95 per
@@ -64,7 +78,7 @@ export function Homepage() {
             <div></div>
             <div className="sec-single-step">
               <img src={step2} alt="step2" />
-              <h4>Subscribe to Loti</h4>
+              <h5>Subscribe to Loti</h5>
               <p>
                 Start your wellness journey & get a a new self-care kit
                 delivered to your home every month! Starting from CAD $47.95 per
@@ -74,7 +88,7 @@ export function Homepage() {
             <div></div>
             <div className="sec-single-step">
               <img src={step3} alt="step3" />
-              <h4>Subscribe to Loti</h4>
+              <h5>Subscribe to Loti</h5>
               <p>
                 Start your wellness journey & get a a new self-care kit
                 delivered to your home every month! Starting from CAD $47.95 per
@@ -86,30 +100,71 @@ export function Homepage() {
         </div>
       </div>
 
-      <div className="thirdsection">
+      <div className="thirdsection  sec-pad">
         <div className="singleProd">
-          <img src={prod1} alt="prod1" />
-          <h3>Lavender body lotion</h3>
-          <p>Find out more</p>
+          <div className="sp-img">
+            <img src={prod1} alt="prod1" />
+          </div>
+          <div className="sp-text">
+            {" "}
+            <h4>Lavender body lotion</h4>
+            <p className="findout">Find out more</p>
+            <p className="text-more-info">
+              hasjk hhdgaskjldh klasjdh klsaj hd kasljdhg kashdkjashd kajsdh
+              lkasjdh aslkjd haslkdh askdhaslkjdh alksdh askjdh askljdhaskljdh
+              askljd haskjdh alskjdhaksdh aksdh askhd aksdh
+            </p>
+          </div>
         </div>
         <div className="singleProd">
-          <img src={prod2} alt="prod2" />
-          <h3>Lavender body lotion</h3>
-          <p>Find out more</p>
+          <div className="sp-img">
+            <img src={prod2} alt="prod2" />
+          </div>
+          <div className="sp-text">
+            {" "}
+            <h4>Lavender body lotion</h4>
+            <p className="findout">Find out more</p>
+            <p className="text-more-info">
+              hasjk hhdgaskjldh klasjdh klsaj hd kasljdhg kashdkjashd kajsdh
+              lkasjdh aslkjd haslkdh askdhaslkjdh alksdh askjdh askljdhaskljdh
+              askljd haskjdh alskjdhaksdh aksdh askhd aksdh
+            </p>
+          </div>
         </div>
         <div className="singleProd">
-          <img src={prod3} alt="prod3" />
-          <h3>Lavender body lotion</h3>
-          <p>Find out more</p>
+          <div className="sp-img">
+            <img src={prod3} alt="prod3" />
+          </div>
+          <div className="sp-text">
+            {" "}
+            <h4>Lavender body lotion</h4>
+            <p className="findout">Find out more</p>
+            <p className="text-more-info">
+              hasjk hhdgaskjldh klasjdh klsaj hd kasljdhg kashdkjashd kajsdh
+              lkasjdh aslkjd haslkdh askdhaslkjdh alksdh askjdh askljdhaskljdh
+              askljd haskjdh alskjdhaksdh aksdh askhd aksdh
+            </p>
+          </div>
         </div>
         <div className="singleProd">
-          <img src={prod2} alt="prod4" />
-          <h3>Lavender body lotion</h3>
-          <p>Find out more</p>
+          <div className="sp-img">
+            {" "}
+            <img src={prod2} alt="prod4" />
+          </div>
+          <div className="sp-text">
+            {" "}
+            <h4>Lavender body lotion</h4>
+            <p className="findout">Find out more</p>
+            <p className="text-more-info">
+              hasjk hhdgaskjldh klasjdh klsaj hd kasljdhg kashdkjashd kajsdh
+              lkasjdh aslkjd haslkdh askdhaslkjdh alksdh askjdh askljdhaskljdh
+              askljd haskjdh alskjdhaksdh aksdh askhd aksdh
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="fourthsection">
+      <div className="fourthsection sec-pad">
         <h2>Benefits of Loti Wellness</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -119,7 +174,7 @@ export function Homepage() {
         <div className="benefits-tabs">
           <div className="benefit-card" id="benefit1">
             <div className="hidden">
-              <h5>Boxes come monthly</h5>
+              <h4>Boxes come monthly</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
               </p>
@@ -127,7 +182,7 @@ export function Homepage() {
           </div>
           <div className="benefit-card" id="benefit2">
             <div className="hidden">
-              <h5>Boxes come monthly</h5>
+              <h4>Boxes come monthly</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
               </p>
@@ -135,7 +190,7 @@ export function Homepage() {
           </div>
           <div className="benefit-card" id="benefit3">
             <div className="hidden">
-              <h5>Boxes come monthly</h5>
+              <h4>Boxes come monthly</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
               </p>
@@ -144,14 +199,14 @@ export function Homepage() {
         </div>
       </div>
 
-      <div className="fifthsection">
+      <div className="fifthsection container sec-pad">
         <div className="fifth-images">
           <img src={getlti} alt="" />
         </div>
         <div className="fifth-text">
-          <h3>
+          <h2>
             Get Your Loti Box <br></br> Today!
-          </h3>
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -161,27 +216,125 @@ export function Homepage() {
         </div>
       </div>
 
-      <div className="testimonials">
-        <h2>Hear what our customers have to say</h2>
+      <div className="testimonials sec-pad">
+        <h4>Hear what our customers have to say</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam,
         </p>
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={30}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="single-testimonial">
+              <div className="testimonial-img">
+                <img src={testimonialone} alt="" />
+              </div>
+              <div className="testimonial-txt">
+                <h6>Jane Cooper</h6>
+                <img src={ratingstars} alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimam,ncididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="single-testimonial">
+              <div className="testimonial-img">
+                <img src={testimonialone} alt="" />
+              </div>
+              <div className="testimonial-txt">
+                <h6>Jane Cooper</h6>
+                <img src={ratingstars} alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimam,ncididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="single-testimonial">
+              <div className="testimonial-img">
+                <img src={testimonialone} alt="" />
+              </div>
+              <div className="testimonial-txt">
+                <h6>Jane Cooper</h6>
+                <img src={ratingstars} alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimam,ncididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="single-testimonial">
+              <div className="testimonial-img">
+                <img src={testimonialone} alt="" />
+              </div>
+              <div className="testimonial-txt">
+                <h6>Jane Cooper</h6>
+                <img src={ratingstars} alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimam,ncididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="single-testimonial">
+              <div className="testimonial-img">
+                <img src={testimonialone} alt="" />
+              </div>
+              <div className="testimonial-txt">
+                <h6>Jane Cooper</h6>
+                <img src={ratingstars} alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minimam,ncididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
-      <div className="subscribe">
-        <div className="giftbox-btn">
-          <h3>Get a gift box</h3>
-          <button>Get a giftbox</button>
-        </div>
-        <div className="subscribe-input">
-          <h6>LET'S TALK</h6>
-          <h3>Our newsletter!</h3>
-          <div className="input">
-            <input type="text" placeholder="Enter your email here " />
-            <button className="subscribe-btn">Sign Up</button>
+      <div className="subscribe sec-pad">
+        <div className="container">
+          <div className="giftbox-btn">
+            <h3>Get a gift box</h3>
+            <button className="subscribe-btn">Get a giftbox</button>
           </div>
+          <div className="subscribe-input">
+            <h6>LET'S TALK</h6>
+            <h3>Our newsletter!</h3>
+            <div className="input">
+              <input type="text" placeholder="Enter your email here " />
+              <button className="subscribe-btn subemail">Sign Up</button>
+            </div>
+          </div>{" "}
         </div>
       </div>
     </>
