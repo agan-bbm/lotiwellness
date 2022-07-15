@@ -36,7 +36,7 @@ export function Stepthree({
                 type="radio"
                 name="Motivation"
                 value="Motivation"
-                onChange={(e) => handleStruggleData(e, true)}
+                onChange={(e) => handleFormData(e, true)}
               />
               <img src={Ellipse1} alt="ellipse1" />
               <p>Lack of Motivation</p>
@@ -47,7 +47,7 @@ export function Stepthree({
                 placeholder="Lack of Time"
                 name="Time"
                 value="Time"
-                onChange={(e) => handleStruggleData(e, true)}
+                onChange={(e) => handleFormData(e, true)}
               />
               <img src={Ellipse2} alt="ellipse2" />
               <p>Lack of Time</p>
@@ -59,7 +59,7 @@ export function Stepthree({
         Spending Money"
                 name="Money"
                 value="Money"
-                onChange={(e) => handleStruggleData(e, true)}
+                onChange={(e) => handleFormData(e, true)}
               />
 
               <img src={Ellipse3} alt="ellipse3" />
@@ -71,7 +71,7 @@ export function Stepthree({
                 placeholder=" Don't Know What To Do"
                 name="whattodo"
                 value="whattodo"
-                onChange={(e) => handleStruggleData(e, true)}
+                onChange={(e) => handleFormData(e, true)}
               />
               <img src={Ellipse4} alt="ellipse4" />
               <p>Don't Know What To Do</p>
@@ -82,7 +82,7 @@ export function Stepthree({
                 placeholder=" Not Worthy of Self-care"
                 name="notworthy"
                 value="notworthy"
-                onChange={(e) => handleStruggleData(e, true)}
+                onChange={(e) => handleFormData(e, true)}
               />
               <img src={Ellipse5} alt="ellipse5" />
               <p>Not Worthy of Self-care</p>

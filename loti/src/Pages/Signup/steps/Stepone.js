@@ -21,6 +21,7 @@ export function Stepone({ nextStep, handleFormData, values }) {
               placeholder="Enter your name"
               name="name"
               onChange={handleFormData}
+              required
             />
           </div>
         </div>

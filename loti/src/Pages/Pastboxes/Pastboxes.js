@@ -3,6 +3,7 @@ import benefit1 from "../../components/Assets/benefit1.png";
 import benefit2 from "../../components/Assets/benefit2.png";
 import benefit3 from "../../components/Assets/benefit3.png";
 import "./pastboxes.css";
+import pastboxescover from "../../components/Assets/pastboxescover.png";
 const mapp = [
   {
     title: "asd",
@@ -105,66 +106,16 @@ export function Pastboxes() {
               </div>
             );
           })}
-          {/* <div className="single-box">
-            <img src={benefit1} alt="" />
-            <h6>January</h6>
+        </div>
+        <div className="pb-cover">
+          <div className="pb-infos">
+            <h2>Get Your Loti Box Today!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <button className="subscribe-btn">Subscribe now</button>
           </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit3} alt="" />
-            <h6>March</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit1} alt="" />
-            <h6>January</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit3} alt="" />
-            <h6>March</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit1} alt="" />
-            <h6>January</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit3} alt="" />
-            <h6>March</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit1} alt="" />
-            <h6>January</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>{" "}
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit3} alt="" />
-            <h6>March</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div>
-          <div className="single-box">
-            <img src={benefit2} alt="" />
-            <h6>February</h6>
-          </div> */}
         </div>
       </div>
     </>

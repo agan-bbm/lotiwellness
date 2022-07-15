@@ -3,16 +3,48 @@
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 30px;
     grid-column-gap: 30px;
+    padding: 50px 0px;
 } 
  .single-box img {
     width: 100%;
  }
 .single-box{
     background-color: red;
+    height: fit-content;
 } 
 .single-box.upper{
     background-color: yellow;
+    margin-top: -80px;
+    height: fit-content;
 }
 .single-box.under{
     background-color: blue;
+    /* margin-top\m: -80px; */
+    height: fit-content;
+    margin-top: 80px;;
+}
+.pb-cover{
+    background-image: url("../../components/Assets/pastboxescover.png");
+    margin: 100px 0px;
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+.pb-infos{
+    width: 50%;
+    text-align: left;
+    padding: 100px;
+}
+@media(max-width:600px){
+    .pb-cover{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        margin: 50px 0px;
+    }
+    .pb-infos{
+        width: initial;
+    text-align: center;
+    padding: 20px;
+    }
 }

@@ -17,6 +17,7 @@ export function Stepfive({ nextStep, prevStep, handleFormData, values }) {
             <input
               type="email"
               name="email"
+              required
               placeholder="Enter your email address"
             />
             <div className="agree-to-terms">

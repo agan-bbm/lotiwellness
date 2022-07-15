@@ -30,6 +30,7 @@ export function Steptwo({ nextStep, prevStep, handleFormData, values, goals }) {
                 placeholder=" I love self-care. I can't get enough!"
                 value="enough"
                 name="enough"
+                required
                 onChange={(e) => handleFormData(e, true)}
               />
               <img src={Ellipse2} alt="ellipse2" />
@@ -41,6 +42,7 @@ export function Steptwo({ nextStep, prevStep, handleFormData, values, goals }) {
                 placeholder="I want to discover
 new self-care products."
                 value="discover"
+                required
                 name="discover"
                 onChange={(e) => handleFormData(e, true)}
               />

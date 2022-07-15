@@ -57,19 +57,19 @@ function Signup(props) {
       (item) => item === e.target.value
     );
 
-    const newArray = [...formData.struggle];
+    const newArray2 = [...formData.struggle];
     if (index !== -1) {
-      newArray.splice(index, 1);
+      newArray2.splice(index, 1);
     } else {
-      newArray.push(e.target.value);
+      newArray2.push(e.target.value);
     }
     isStruggle
-      ? setFormData((prevState) => ({
-          ...prevState,
-          struggle: newArray,
+      ? setFormData((firstState) => ({
+          ...firstState,
+          struggle: newArray2,
         }))
-      : setFormData((prevState) => ({
-          ...prevState,
+      : setFormData((firstState) => ({
+          ...firstState,
           [e.target.name]: e.target.value,
         }));
   };
