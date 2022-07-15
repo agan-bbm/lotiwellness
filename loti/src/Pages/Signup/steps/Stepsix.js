@@ -23,7 +23,7 @@ export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
             & activities to help you discover your best self.
           </p>
           <div className="plainchoices">
-            <div>
+            <div className="planch-div">
               <div className="plan-choice">
                 <img src={plan12month} alt="plan12month" />
                 <div className="subs-time">
@@ -51,7 +51,7 @@ export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
               </div>
             </div>
 
-            <div>
+            <div className="planch-div">
               {" "}
               <div className="plan-choice">
                 <img src={plan6month} alt="plan6month" />
@@ -78,7 +78,7 @@ export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
               </div>
             </div>
 
-            <div>
+            <div className="planch-div">
               <div className="plan-choice">
                 <img src={plan1month} alt="plan1month" />
                 <div className="subs-time">
@@ -108,7 +108,9 @@ export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
           </p>
         </div>
 
-        <button onClick={prevStep}>prev</button>
+        <button className="prev-btn" onClick={prevStep}>
+          prev
+        </button>
       </div>
     </>
   );

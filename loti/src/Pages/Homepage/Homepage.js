@@ -165,12 +165,15 @@ export function Homepage() {
       </div>
 
       <div className="fourthsection sec-pad">
-        <h2>Benefits of Loti Wellness</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,
-        </p>
+        <div className="fourth-txt">
+          <h2>Benefits of Loti Wellness</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam,
+          </p>
+        </div>
+
         <div className="benefits-tabs">
           <div className="benefit-card" id="benefit1">
             <div className="hidden">
@@ -217,14 +220,17 @@ export function Homepage() {
       </div>
 
       <div className="testimonials sec-pad">
-        <h4>Hear what our customers have to say</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,
-        </p>
+        <div className="testimonial-txt-container">
+          <h4>Hear what our customers have to say</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam,
+          </p>
+        </div>
+
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={30}
           centeredSlides={true}
           pagination={{
@@ -232,6 +238,11 @@ export function Homepage() {
           }}
           modules={[Pagination]}
           className="mySwiper"
+          breakpoints={{
+            600: {
+              slidesPerView: 2,
+            },
+          }}
         >
           <SwiperSlide>
             <div className="single-testimonial">

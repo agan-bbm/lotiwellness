@@ -245,6 +245,8 @@ display: flex;
     .main-txt-btn{
         text-align: center;
         padding-bottom: 50px;
+        width: 90% !important;
+        margin:auto !important;
     }
     .rightsection {
     
@@ -259,6 +261,18 @@ display: flex;
     .sec-single-step{
         width: 100%;
         padding: 0px;
+    }
+    .sec-unbox{
+        width: 90%;
+        margin: auto;
+    }
+    .fourth-txt{
+        width: 90%;
+        margin: auto;
+    }
+    .fourthsection .hidden{
+        width: 90%;
+        margin: auto;
     }
     .featuredon{
         display: none;
@@ -278,6 +292,14 @@ display: flex;
     .fifth-images img{
         width: 100%;
     }
+    .fifth-text{
+        width: 90%;
+        margin: auto;
+    }
+    .testimonial-txt-container{
+        width: 90%;
+        margin: auto;
+    }
     .subscribe .container{
         flex-direction: column;
     }
@@ -290,5 +312,8 @@ display: flex;
     .benefit-card{
         width: 100%;
         margin: 20px 0px;
+    }
+    .single-testimonial{
+        flex-direction: column;
     }
 }
