@@ -36,9 +36,11 @@ export function Header(props) {
                   <li>PastBoxes</li>
                 </NavLink>
                 <li>Login</li>
-                <li>
-                  <button className="subscribe-btn">Get started</button>
-                </li>
+                <NavLink to="/signup">
+                  <li>
+                    <button className="subscribe-btn">Get started</button>
+                  </li>
+                </NavLink>
               </ul>
             </div>
           </div>{" "}

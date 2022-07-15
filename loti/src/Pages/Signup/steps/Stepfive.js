@@ -9,17 +9,37 @@ export function Stepfive({ nextStep, prevStep, handleFormData, values }) {
 
   return (
     <>
-      <div className="step5">
-        <label htmlFor="">What’s your Email address?</label>
-        <input type="email" placeholder="Enter your email address" />
-        <input type="checkbox" />{" "}
-        <span>By clicking you agree to our Terms and Privacy Policy.</span>
+      <div className="signup-container">
+        <div className="step5 stepcontainer">
+          <p>Tell us about yourself and we'll build the perfect box for you!</p>
+          <h5>What’s your Email address?</h5>
+          <div className="input-container">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+            <div className="agree-to-terms">
+              <input id="agree-chckbx" type="checkbox" />{" "}
+              <span id="agree-terms">
+                By clicking you agree to our Terms and Privacy Policy.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="signup-buttons">
+          <button
+            className="continue-btn"
+            onClick={submitFormData}
+            type="submit"
+          >
+            Continue
+          </button>
+          <button className="prev-btn" onClick={prevStep}>
+            prev
+          </button>
+        </div>
       </div>
-
-      <button onClick={submitFormData} type="submit">
-        Continue
-      </button>
-      <button onClick={prevStep}>prev</button>
     </>
   );
 }

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import "./signup.css";
 import { Stepsix } from "./steps/Stepsix";
 import { Stepfive } from "./steps/Stepfive";
 import { Stepfour } from "./steps/Stepfour";
@@ -13,8 +15,8 @@ function Signup(props) {
   //state for form data
   const [formData, setFormData] = useState({
     name: "",
-    goals: "",
-    struggle: "",
+    goals: [],
+    struggle: [],
     favourite: "",
     email: "",
     plan: "",
@@ -26,22 +28,50 @@ function Signup(props) {
   const nextStep = () => {
     setstep(step + 1);
   };
-
   // function for going to previous step by decreasing step state by 1
   const prevStep = () => {
     setstep(step - 1);
   };
+  const handleInputData = (e, isGoals = false, f, isStruggle = false) => {
+    const index = formData.goals.findIndex((item) => item === e.target.value);
 
-  // handling form input data by taking onchange value and updating our previous form data state
-  const handleInputData = (input) => (e) => {
-    // input value from the form
-    const { value } = e.target;
+    const newArray = [...formData.goals];
+    if (index !== -1) {
+      newArray.splice(index, 1);
+    } else {
+      newArray.push(e.target.value);
+    }
+    isGoals
+      ? setFormData((prevState) => ({
+          ...prevState,
+          goals: newArray,
+        }))
+      : setFormData((prevState) => ({
+          ...prevState,
+          [e.target.name]: e.target.value,
+        }));
+  };
 
-    //updating for data state taking previous state and then adding new value to create new object
-    setFormData((prevState) => ({
-      ...prevState,
-      [input]: value,
-    }));
+  const handleStruggleData = (e, isStruggle = false) => {
+    const index = formData.struggle.findIndex(
+      (item) => item === e.target.value
+    );
+
+    const newArray = [...formData.struggle];
+    if (index !== -1) {
+      newArray.splice(index, 1);
+    } else {
+      newArray.push(e.target.value);
+    }
+    isStruggle
+      ? setFormData((prevState) => ({
+          ...prevState,
+          struggle: newArray,
+        }))
+      : setFormData((prevState) => ({
+          ...prevState,
+          [e.target.name]: e.target.value,
+        }));
   };
 
   // javascript switch case to show different form in each step
@@ -69,7 +99,7 @@ function Signup(props) {
         <Stepthree
           nextStep={nextStep}
           prevStep={prevStep}
-          handleFormData={handleInputData}
+          handleFormData={handleStruggleData}
           values={formData}
         />
       );

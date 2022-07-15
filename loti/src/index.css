@@ -102,6 +102,10 @@ a{
 a:active{
   color: red ;
 }
+button{
+  cursor: pointer;
+}
+
 @media(max-width:600px){
   .container{
     width: 100%;
