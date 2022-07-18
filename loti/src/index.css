@@ -16,8 +16,6 @@
   url("./components/Fonts/Lexend_Deca/LexendDeca-Light.ttf") format("truetype");
   font-weight:300;
 }
-
-
 @font-face {
   font-family: "LibreBaskerville";
   src: local("LibreBaskerville"),
@@ -36,14 +34,10 @@
   url("./components/Fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
   font-weight:400;
 }
-
-
-
 
 body {
   margin: 0;
   font-family: "LexendDeca";;
-  
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "LibreBaskerville";
@@ -55,13 +49,11 @@ h1{
 h2{
   font-size:49px ;
   line-height: 58.8px;
-
 }
 h3{
   font-size: 39px;
   font-weight: 400;
   line-height: 46.8px;
-
 }
 h4{
   line-height:  37.2px;
@@ -105,8 +97,16 @@ a:active{
 button{
   cursor: pointer;
 }
+/*tablet*/
+@media(min-width:768px) and (max-width:998px){
+  .container{
+    width: 100%;
+  }
+}
 
-@media(max-width:600px){
+/*mobile*/
+
+@media(max-width:767px){
   .container{
     width: 100%;
   }

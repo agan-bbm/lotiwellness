@@ -175,6 +175,45 @@
     padding: 50px 0px;
 }
 
+/*tablet*/
+@media(min-width:768px) and (max-width:998px){
+    .stepcontainer{
+        width: 100%;
+    }
+    .struggles-group{
+        flex-wrap: wrap;
+    }
+    .struggle{
+        margin: 10px;
+    }
+    .signup-container{
+        height: auto;
+    }
+    .plainchoices{
+        flex-direction: column;
+    }
+    .plan-choice {
+        width: 300px;
+        margin-bottom: -10px !important;
+        margin: 0 auto;
+    }
+    .offer-pink {
+        width: 300px;
+        margin-top: -10px !important;
+       
+        margin: 0 auto;
+    }
+    .planch-div {
+        margin: 20px 0px;
+    }
+    .step6 {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*mobile*/
+
 @media(max-width:767px){
 
     .signup-container{

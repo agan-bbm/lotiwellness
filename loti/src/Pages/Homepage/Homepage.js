@@ -44,15 +44,15 @@ export function Homepage() {
           </div>
         </div>
         <div className="rightsection">
-          <img src={rightone} alt="" />
-          <img src={righttwo} alt="" />
+          <img src={rightone} alt="rightone" />
+          <img src={righttwo} alt="righttwo" />
         </div>
       </div>
 
       <div className="secondsection container sec-pad">
         <div className="featuredon">
           <h5>Featured On</h5>
-          <img src={featuredon} alt="" />
+          <img src={featuredon} alt="featuredon" />
         </div>
         <div className="sec-unbox">
           <h2>
@@ -204,7 +204,7 @@ export function Homepage() {
 
       <div className="fifthsection container sec-pad">
         <div className="fifth-images">
-          <img src={getlti} alt="" />
+          <img src={getlti} alt="getlti" />
         </div>
         <div className="fifth-text">
           <h2>
@@ -233,6 +233,7 @@ export function Homepage() {
           slidesPerView={1}
           spaceBetween={30}
           centeredSlides={true}
+          // destroy-==
           pagination={{
             clickable: true,
           }}
@@ -247,11 +248,11 @@ export function Homepage() {
           <SwiperSlide>
             <div className="single-testimonial">
               <div className="testimonial-img">
-                <img src={testimonialone} alt="" />
+                <img src={testimonialone} alt="testimonialone" />
               </div>
               <div className="testimonial-txt">
                 <h6>Jane Cooper</h6>
-                <img src={ratingstars} alt="" />
+                <img src={ratingstars} alt="ratingstars" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -264,11 +265,11 @@ export function Homepage() {
           <SwiperSlide>
             <div className="single-testimonial">
               <div className="testimonial-img">
-                <img src={testimonialone} alt="" />
+                <img src={testimonialone} alt="testimonialone" />
               </div>
               <div className="testimonial-txt">
                 <h6>Jane Cooper</h6>
-                <img src={ratingstars} alt="" />
+                <img src={ratingstars} alt="ratingstars" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -281,11 +282,11 @@ export function Homepage() {
           <SwiperSlide>
             <div className="single-testimonial">
               <div className="testimonial-img">
-                <img src={testimonialone} alt="" />
+                <img src={testimonialone} alt="testimonialone" />
               </div>
               <div className="testimonial-txt">
                 <h6>Jane Cooper</h6>
-                <img src={ratingstars} alt="" />
+                <img src={ratingstars} alt="ratingstars" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -298,11 +299,11 @@ export function Homepage() {
           <SwiperSlide>
             <div className="single-testimonial">
               <div className="testimonial-img">
-                <img src={testimonialone} alt="" />
+                <img src={testimonialone} alt="testimonialone" />
               </div>
               <div className="testimonial-txt">
                 <h6>Jane Cooper</h6>
-                <img src={ratingstars} alt="" />
+                <img src={ratingstars} alt="ratingstars" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -315,11 +316,11 @@ export function Homepage() {
           <SwiperSlide>
             <div className="single-testimonial">
               <div className="testimonial-img">
-                <img src={testimonialone} alt="" />
+                <img src={testimonialone} alt="testimonialone" />
               </div>
               <div className="testimonial-txt">
                 <h6>Jane Cooper</h6>
-                <img src={ratingstars} alt="" />
+                <img src={ratingstars} alt="ratingstars" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

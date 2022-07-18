@@ -2,10 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Homepage } from "./Pages/Homepage/Homepage";
 import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
 import { Pastboxes } from "./Pages/Pastboxes/Pastboxes";
 import { Route, Routes } from "react-router-dom";
 import Signup from "./Pages/Signup/Signup";
+import Header from "./components/Header/Header";
 
 function App() {
   return (

@@ -8,7 +8,7 @@ export function Footer() {
       <div className="footer sec-pad">
         <div className="footer-container container">
           <div className="footer-logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
             <h6>Our Stores</h6>
             <p>
               Praesent sapien massa, convallis a pellentesque nec, egestas non

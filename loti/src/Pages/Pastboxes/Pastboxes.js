@@ -101,7 +101,7 @@ export function Pastboxes() {
                     : "single-box"
                 }
               >
-                <img src={benefit1} alt="" />
+                <img src={benefit1} alt="benefit1" />
                 <h6>{single.title}</h6>
               </div>
             );

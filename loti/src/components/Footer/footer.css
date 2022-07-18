@@ -16,6 +16,7 @@
 }
 .footer-logo{
     width: 30%;
+    text-align: left;
 }
 .footer-links{
     display: flex;
@@ -32,12 +33,29 @@
     color: #58BADB;
     font-weight: 400;
 }
-@media(max-width:600px){
+/*tablet*/
+@media(min-width:768px) and (max-width:998px){
+    .footer-logo {
+        width: auto;
+        text-align: center;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/*mobile*/
+
+@media(max-width:767px){
     .footer-container{
         flex-direction: column;
     }
     .footer-logo{
         width: auto;
+    text-align: center;
+
     }
     .footer-links{
         width: auto;
