@@ -7,6 +7,7 @@ import { Stepfour } from "./steps/Stepfour";
 import { Stepone } from "./steps/Stepone";
 import { Stepthree } from "./steps/Stepthree";
 import { Steptwo } from "./steps/Steptwo";
+import { Steps } from "./Steps";
 
 function Signup(props) {
   //state for steps
@@ -21,9 +22,13 @@ function Signup(props) {
     email: "",
     plan: "",
   });
+  const [thestep, setstepactive] = useState(false);
 
-  console.log(formData);
-
+  const stepActive = () => {
+    setstep(step);
+    console.log(stepActive);
+    console.log(step);
+  };
   // function for going to next step by increasing step state by 1
   const nextStep = () => {
     setstep(step + 1);
@@ -32,6 +37,8 @@ function Signup(props) {
   const prevStep = () => {
     setstep(step - 1);
   };
+
+  <Steps step={step}></Steps>;
   const handleInputData = (e, isGoals = false, f, isStruggle = false) => {
     const index = formData.goals.findIndex((item) => item === e.target.value);
 
@@ -73,7 +80,7 @@ function Signup(props) {
           [e.target.name]: e.target.value,
         }));
   };
-
+  console.log(formData);
   // javascript switch case to show different form in each step
   switch (step) {
     case 1:
@@ -82,8 +89,10 @@ function Signup(props) {
           nextStep={nextStep}
           handleFormData={handleInputData}
           values={formData}
+          step={step}
         />
       );
+
     case 2:
       return (
         <Steptwo
@@ -91,6 +100,7 @@ function Signup(props) {
           prevStep={prevStep}
           handleFormData={handleInputData}
           values={formData}
+          step={step}
         />
       );
 
@@ -101,6 +111,7 @@ function Signup(props) {
           prevStep={prevStep}
           handleFormData={handleStruggleData}
           values={formData}
+          step={step}
         />
       );
     case 4:
@@ -110,6 +121,7 @@ function Signup(props) {
           prevStep={prevStep}
           handleFormData={handleInputData}
           values={formData}
+          step={step}
         />
       );
     case 5:
@@ -119,6 +131,7 @@ function Signup(props) {
           prevStep={prevStep}
           handleFormData={handleInputData}
           values={formData}
+          step={step}
         />
       );
     case 6:
@@ -128,6 +141,7 @@ function Signup(props) {
           prevStep={prevStep}
           handleFormData={handleInputData}
           values={formData}
+          step={step}
         />
       );
     // default case to show nothing

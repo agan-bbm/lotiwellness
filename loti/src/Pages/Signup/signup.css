@@ -175,6 +175,26 @@
     padding: 50px 0px;
 }
 
+
+.su-icons{
+    display:flex;
+    justify-content: center;
+}
+.stepicon{
+    background-color: red;
+    width: 60px;
+    margin: 0px 20px;
+}
+.circle{
+    height: 60px;
+
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*tablet*/
 @media(min-width:768px) and (max-width:998px){
     .stepcontainer{
@@ -209,6 +229,9 @@
     .step6 {
         width: 90%;
         margin: auto;
+    }
+    .su-icons img {
+        width: 100%;
     }
 }
 
@@ -269,6 +292,18 @@
     .box-txt{
         height: auto;
     }
-    
+    .su-icons img {
+        width: 100%;
+    }
 }
 
+/* .struggle input{
+    display: none;
+} */
+#love:checked ~ .struggle{
+    background: red !important;
+}
+
+input[type="checkbox"]:checked ~ .struggle{
+    background: red;
+}

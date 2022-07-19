@@ -3,8 +3,9 @@ import plan12month from "../../../components/Assets/12.png";
 import plan6month from "../../../components/Assets/6.png";
 
 import plan1month from "../../../components/Assets/1.png";
+import { Steps } from "../Steps";
 
-export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
+export function Stepsix({ nextStep, prevStep, handleFormData, values, step }) {
   const submitFormData = (e) => {
     e.preventDefault();
 
@@ -14,6 +15,8 @@ export function Stepsix({ nextStep, prevStep, handleFormData, values }) {
   return (
     <>
       <div className="signup-container">
+        <Steps step={step}></Steps>
+
         <div className="step6 stepcontainer">
           <p>Tell us about yourself and we'll build the perfect box for you!</p>
 

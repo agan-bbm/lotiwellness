@@ -1,14 +1,23 @@
 import React from "react";
-export function Stepone({ nextStep, handleFormData, values }) {
+import { Steps } from "../Steps";
+export function Stepone({
+  nextStep,
+  handleFormData,
+  values,
+  stepactive,
+  step,
+}) {
   const submitFormData = (e) => {
     e.preventDefault();
 
     nextStep();
   };
-
+  console.log(step);
   return (
     <>
       <div className="signup-container">
+        <Steps step={step}></Steps>
+
         <div className="step1 stepcontainer">
           <p>Tell us about yourself and we'll build the perfect box for you!</p>
 
@@ -24,6 +33,7 @@ export function Stepone({ nextStep, handleFormData, values }) {
             />
           </div>
         </div>
+
         <div className="signup-buttons">
           <button
             className="continue-btn"

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react";
+import disableScroll from "disable-scroll";
 
 import "./header.css";
 
@@ -20,6 +21,8 @@ export default function Header() {
   const changeFixed = () => {
     setStyle("");
   };
+
+  visible ? disableScroll.on() : disableScroll.off();
   const button = () => {
     if (visible) {
       return (

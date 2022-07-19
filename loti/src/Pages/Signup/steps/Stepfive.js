@@ -1,15 +1,26 @@
 import React from "react";
+import { Steps } from "../Steps";
 
-export function Stepfive({ nextStep, prevStep, handleFormData, values }) {
+export function Stepfive({
+  nextStep,
+  prevStep,
+  setstepactive,
+  handleFormData,
+  values,
+  step,
+}) {
   const submitFormData = (e) => {
     e.preventDefault();
 
     nextStep();
   };
+  console.log(setstepactive);
 
   return (
     <>
       <div className="signup-container">
+        <Steps step={step}></Steps>
+
         <div className="step5 stepcontainer">
           <p>Tell us about yourself and we'll build the perfect box for you!</p>
           <h5>What’s your Email address?</h5>
