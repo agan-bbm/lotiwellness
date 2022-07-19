@@ -1,5 +1,4 @@
 import React from "react";
-
 export function Stepone({ nextStep, handleFormData, values }) {
   const submitFormData = (e) => {
     e.preventDefault();

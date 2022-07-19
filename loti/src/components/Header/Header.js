@@ -51,8 +51,10 @@ export default function Header() {
     <div>
       <div className="navbar-main-container">
         <div className="SvgLogo">
-          <img src={logo} alt="logo" />
-          <Link to="/" className="logo-link"></Link>
+          <Link to="/" className="logo-link">
+            {" "}
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <Link to="/" className="logo-link"></Link>
         <div className="navbar-links">

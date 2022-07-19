@@ -91,11 +91,14 @@ ul li{
 a{
   text-decoration: none;
 }
-a:active{
+/* a:active{
   color: red ;
-}
+} */
 button{
   cursor: pointer;
+}
+.st0{
+  display: none;
 }
 /*tablet*/
 @media(min-width:768px) and (max-width:998px){
